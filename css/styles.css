@@ -67,6 +67,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     padding: 24px 0 25px 0;
     
 
@@ -74,6 +75,7 @@ body {
 
 .header-container {
     width: 1170px;
+
 
     display: flex;
     flex-wrap: wrap;
@@ -202,7 +204,22 @@ body {
 
 .current{
     color: var(--accent);
+    position: relative;
+    
 }
+
+.under{
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    display: inline-block;
+    display: flex;
+    position: absolute;
+    top: 46px;
+}
+
+
 
 
 /* MAIN */
@@ -519,6 +536,7 @@ body {
 
 .partners-list{
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -543,63 +561,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 .partner-link:hover{
     border: 1px solid var(--accent);
     
 }
 
-.logo-size{
-    width: 106px;
-    height: 60px;
-}
-
 .partner-logo1{
-    background: url('../images/svg/partners/client1.svg') no-repeat;
+    background: url('../images/svg/partners/client1.svg') center no-repeat;
 }
 .partner-logo1:hover,
 .partner-logo1:focus{
-    background: url('../images/svg/partners/hover-client1.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client1.svg') center no-repeat;
 }
 
 .partner-logo2{
-    background: url('../images/svg/partners/client2.svg') no-repeat;
+    background: url('../images/svg/partners/client2.svg') center no-repeat;
 }
 .partner-logo2:hover,
 .partner-logo2:focus {
-    background: url('../images/svg/partners/hover-client2.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client2.svg') center no-repeat;
 }
 
 .partner-logo3{
-    background: url('../images/svg/partners/client3.svg') no-repeat;
+    background: url('../images/svg/partners/client3.svg') center no-repeat;
 }
 .partner-logo3:hover,
 .partner-logo3:focus {
-    background: url('../images/svg/partners/hover-client3.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client3.svg') center no-repeat;
 }
 
 .partner-logo4{
-    background: url('../images/svg/partners/client4.svg') no-repeat;
+    background: url('../images/svg/partners/client4.svg') center no-repeat;
 }
 .partner-logo4:hover,
 .partner-logo4:focus {
-    background: url('../images/svg/partners/hover-client4.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client4.svg') center no-repeat;
 }
 
 .partner-logo5{
-    background: url('../images/svg/partners/client5.svg') no-repeat;
+    background: url('../images/svg/partners/client5.svg') center no-repeat;
 }
 .partner-logo5:hover,
 .partner-logo5:focus {
-    background: url('../images/svg/partners/hover-client5.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client5.svg') center no-repeat;
 }
 
 .partner-logo6{
-        background: url('../images/svg/partners/client6.svg') no-repeat;
+        background: url('../images/svg/partners/client6.svg') center no-repeat;
 }
 .partner-logo6:hover,
 .partner-logo6:focus {
-    background: url('../images/svg/partners/hover-client6.svg') no-repeat;
+    background: url('../images/svg/partners/hover-client6.svg') center no-repeat;
 }
 
 /* footer */
@@ -677,7 +692,9 @@ footer{
 
 .join-us-social-links{
     padding: 0;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .join-instagram {
