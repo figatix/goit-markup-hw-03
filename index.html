@@ -12,7 +12,11 @@
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body >
+<div class="wrapper modal-bgd">
+    <div class="modal modal-active">
+        
+    </div>
     <header class="header">
         <div class="header-container">
             <nav class="navigation-site">
@@ -39,7 +43,7 @@
         <section class="hero">
             <div class="hero-wrapper">
                 <h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn">Заказать услугу</button>
+                <button type="button" id="reserve" class="hero-btn">Заказать услугу</button>
             </div>
                 
         </section>
@@ -81,9 +85,21 @@
         <section class="work-section">
             <h2 class="section-tittle">Чем мы занимаемся</h2>
             <ul lang="en" class="works-list">
-                <li class="work"><img src="./images/box1.jpg" alt="man writes code on computer" width="370"></li>
-                <li class="work"><img src="./images/box2.jpg" alt="girl chooses smartphone layout on computer" width="370"></li>
-                <li class="work"><img src="./images/box3.jpg" alt="girl chooses a color from the palette on the tablet" width="370"></li>
+                <li class="work">
+                    <div class="work-img-1"> 
+                        <img src="./images/box1.jpg" alt="man writes code on computer" width="370">
+                    </div>   
+                </li>
+                <li class="work">
+                    <div class="work-img-2">
+                        <img src="./images/box2.jpg" alt="girl chooses smartphone layout on computer" width="370">
+                    </div>
+                </li>
+                <li class="work">
+                    <div class="work-img-3">
+                        <img src="./images/box3.jpg" alt="girl chooses a color from the palette on the tablet" width="370">
+                    </div>
+                </li>
             </ul>
         </section>
         
@@ -311,6 +327,7 @@
         </div>
 
     </footer>
-
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>
