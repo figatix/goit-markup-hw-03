@@ -1,0 +1,551 @@
+/* Змінні */
+
+:root {
+    /* colors */
+    
+    --footer-color: #2F303A;
+    --accent: #2196F3;
+    --h-color: #212121;
+    --p-color: #757575;
+    --bgd-color: #FFFFFF;
+    --filter-color: #F5F4FA;
+    --font-main:'Roboto', sans-serif;
+    --font-logo: 'Raleway', sans-serif;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Обнуляю стилі */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Задаю стандартні значення  */
+body {
+
+    font-family: var(--font-main);
+    font-size: 14px;
+    line-height: 1.71;
+    /* letter-spacing: 0.03em; */
+
+    background-color: var(--bgd-color);
+    color: var(--h-color);
+
+
+}
+
+
+/* HEADER */
+.header{
+    
+    border-bottom: 1px solid #ECECEC;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+
+}
+
+.header-container {
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navigation-site{
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+.contact-list {
+ 
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+.mail-link{
+ 
+}
+
+/* LOGO */
+.logo{
+    
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: #000000;
+
+}
+
+.logo > span{
+    color: var(--accent);
+}
+
+/* NAVIGATION */
+.nav-list li{
+    
+}
+.nav-list li:last-child{
+   
+}
+
+.pages-nav-link{
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--h-color);
+
+   
+}
+
+
+.pages-nav-link:hover, .pages-nav-link:focus{
+    color: var(--accent);
+
+}
+
+.contact-link{
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--p-color);
+}
+.contact-link:hover, .contact-link:focus{
+    color: var(--accent);
+}
+
+.current{
+    color: var(--accent);
+}
+
+
+
+/* HERO */
+.hero{
+    background-color: var(--footer-color);
+
+
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-tittle{
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--bgd-color);
+
+    
+    
+    
+}
+
+.hero-btn{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;  
+    letter-spacing: 0.06em;
+
+    background-color: var(--accent);
+    color: var(--bgd-color);
+    cursor: pointer;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+
+
+}
+
+/* Our advantages  */
+
+.adv-section{
+    
+}
+
+.adv-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.adv-section li{
+    
+}
+
+.adv-section li:last-child{
+    
+}
+
+
+
+.adv-tittles{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+ 
+}
+
+.adv-section p{
+    color: var(--p-color);
+    letter-spacing: 0.03em;
+  
+}
+
+/* WORKS */
+
+.work-section{
+    
+}
+
+.section-tittle {
+    
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+
+}
+
+.works-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  
+
+}
+
+.work{
+    
+}
+
+.works-list>li:last-child{
+    
+}
+
+/* team */
+.team-section{
+
+
+    
+    background-color: #F5F4FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+ 
+
+}
+
+.team-profession{
+
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+
+    
+}
+
+.teammate{
+   
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.teammate>img{
+    
+    
+}
+
+.teammate-bio{
+    
+
+    text-align: center;
+}
+
+.teammate:hover{
+    
+
+    outline: 2px solid var(--accent);
+    cursor: pointer;
+}
+
+.team-list{
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+}
+
+
+
+/* footer */
+
+footer{
+    background-color: var(--footer-color);
+}
+
+.footer{
+   
+
+
+    display: flex;
+    flex-direction: column;
+}
+/* footer logo */
+
+.footer a.logo {
+    color: var(--bgd-color);
+
+   
+
+}
+.address ul{
+    
+}
+
+.address li{
+    
+}
+
+.address li:last-child{
+   
+}
+
+/* addres */
+
+.map-link{
+    font-style: normal;
+    color: var(--bgd-color);
+    letter-spacing: 0.03em;
+
+}
+
+.footer-link{
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--accent);
+}
+
+
+
+/* PORTFOLIO.HTML */
+
+.projects-section{
+    
+}
+
+/* FILTER */
+
+.filter{
+
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background: var(--filter-color);
+    border-radius: 4px;
+    border: none;
+    
+    
+  
+
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.active{
+    background:var(--accent);
+    color: var(--bgd-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+
+
+/* PROJECTS */
+.projects-section{
+    
+}
+
+.projects{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+
+}
+
+.project-item{
+
+    
+    background:var(--bgd-color);
+    border: 1px solid #EEEEEE;
+    
+   
+    
+}
+
+
+/* ДЛЯ ПРАВИЛЬНОГО МАРДЖИНК ПРИ 3*3. В ІНШИХ ВИПАДКАХ -ПРОБЛЕМИ  */
+.project-item:nth-child(3),
+.project-item:nth-child(6),
+.project-item:nth-child(9){
+   
+}
+
+.project-item:nth-last-child(1),
+.project-item:nth-last-child(2),
+.project-item:nth-last-child(3){
+    
+}
+
+/* Для того, щоб картинка не налазила на БОРДЕР */
+.projects img {
+    
+}
+
+
+.projects-tittle{
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--h-color);
+
+    
+
+}
+
+.projects-text{
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color:var(--p-color);
+
+    
+
+}
+
+/* ТИМЧАСОВИЙ СТИЛЬ */
+.project-item:hover,
+.project-item:focus {
+
+    box-shadow: 0px 0px 1px 1px var(--accent);
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
